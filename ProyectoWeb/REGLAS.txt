@@ -1,0 +1,20 @@
+Requisitos mínimos del portal web:
+    1. El layout o estructura del tag <body> de cada página del sitio web deberá́disponer: 
+        una cabecera <header>
+        una barra de navegación <nav> 
+        un elemento principal <main>
+
+    2. El sitio web debe contar con un mínimo de 3-4 secciones. Dichos apartados pueden ser desarrollados en formato onepage o en distintas páginas 
+    haciendo uso de links para su navegación (es obligatorio el uso de rutas relativas).
+
+    3.El portal web debe ser coherente y priorizar el contenido multimedia (imágenes, vídeos, iconos, logos, etc.)
+
+    4.Debe incluir un logo diseñado en formato SVG que represente al sitio web
+
+    5. Para el código de la web usaremos codificación UTF-8 que especificaremos en el tag head.
+
+    6. El código CSS debe estar en un fichero a parte del HTML.
+
+    7. El tamaño del sitio web no debe exceder de 10MB.
+
+    8. Evita usar elementos float para la distribución de elementos dentro de la página
