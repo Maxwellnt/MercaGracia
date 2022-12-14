@@ -19,20 +19,24 @@ h1 {
   position: sticky;
   display: grid;
   grid-gap: 5px;
-  grid-column: 1fr 2fr 1fr;
+  grid-column: auto;
 
   grid-template-areas: 
-    'logo .'
-    'nav nav';  
+    'logo name . .'
+    'nav nav nav nav';  
   
 }
-#grid-logo{grid-area:logo;}
-#sub-grid-logo{grid-area:nav;}
+.grid-logo{grid-area:logo;}
+.grid-name{grid-area:name;}
+#barra-de-navegacion{grid-area:nav;}
 
-#sub-grid-logo{
-  display: grid;
-  grid-gap: 2px;
-  grid-template-columns: repeat(minmax(200px, 1fr));
+.grid-logo{
+  display: flex;
+  
+}
+
+.grid-name{
+  text-align: center;
 }
 
 #inici {grid-area:inici;}
@@ -73,10 +77,10 @@ li{
   background-color: greenyellow;
 }
 
-/*.logo{
-  max-width: 100%;
+.logo{
+  width: 5rem;
 }
-@media(max-width:480px){
+/*@media(max-width:480px){
   body{
       background-color: aqua;
   }
@@ -136,4 +140,8 @@ text-align: center
   color: white;
   text-align: center;
   width: auto;
+}
+
+.foto-foot{
+  width:3rem;
 }
