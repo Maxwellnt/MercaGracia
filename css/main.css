@@ -6,7 +6,7 @@ html{
 }
 body {
   font-family: Arial, Helvetica, sans-serif;
-  height: 2000px;
+  height: 20px;
 }
 h1 {
   font-size: 3rem;
@@ -26,14 +26,12 @@ h1 {
     'nav nav nav nav';  
   
 }
-.grid-logo{grid-area:logo;}
+.grid-logo{
+  grid-area:logo;
+  width: 5rem;
+}
 .grid-name{grid-area:name;}
 #barra-de-navegacion{grid-area:nav;}
-
-.grid-logo{
-  display: flex;
-  
-}
 
 .grid-name{
   text-align: center;
