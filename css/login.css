@@ -1,0 +1,26 @@
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    display: inline;
+    font-size: 30px;
+    
+}
+.caja{
+    
+    display: inline;
+    background-color: rgb(177, 177, 177);   
+    text-align: center;
+    height: 450px;
+    width: 350px;
+} 
+.form-group{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
