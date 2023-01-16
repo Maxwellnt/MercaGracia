@@ -42,7 +42,7 @@ nav ul li{
 }
 
 #buyHead{
-    background-color:blanchedalmond;
+    background-color:rgba(0, 29, 61, 0.5);
     margin: auto;
    margin-top: 1vw;
 
@@ -58,13 +58,55 @@ nav ul li{
 }
 
 #buyBody{
-    margin: 1vw;
+    margin: 2vw 2vw 2vw;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#products{
- width: 60vw;
- height: 60px;
- background-color:aqua;
+.products{
+display: flex;
+margin: 1rem;
+ width: 16vw;
+ height: 16vw;
+ background-image: url(../img/img-compra/pan.webp) ;
+ background-repeat: no-repeat;
+ background-size: 100% 100%;
+ border: 1px;
+ border-radius: 10px;
+ box-shadow: 2px 2px 2px 2px grey;
+ 
+}
+
+.price{
+    
+    width: 16vw;
+    height: 4vw;
+    background-color: rgb(255, 195, 0);
+    border: 1px;
+ border-radius: 10px;
+    align-self: end;
+}
+
+.products:hover{
+    animation: price 1s ease-in-out both;
+    
+}
+@keyframes price  {
+    
+} {
+
+    0%{ 
+        background-size: 100% 100%;
+        
+    
+    }
+
+    100%{
+        background-size: 100% 12vw;
+    }
+    
 }
 
 #mercaTinder{
