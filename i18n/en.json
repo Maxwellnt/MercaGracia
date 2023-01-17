@@ -1,4 +1,9 @@
 {
+    "linkInici":"Main page",
+    "linkCompra":"Online shopping",
+    "linkLogin":"Login",
+    "linkAbout":"About us",
+
     "access":"Access control",
     "firstName": {
         "textLabel": "First Name",

@@ -1,4 +1,9 @@
 {
+    "linkInici":"Inici",
+    "linkCompra":"Compra online",
+    "linkLogin":"Registre",
+    "linkAbout":"Sobre nosaltres",
+
     "access":"Control d'accés",
     "firstName": {
         "textLabel": "Nom",
