@@ -42,5 +42,7 @@ async function changeLanguage(lang) {
   if(document.getElementById('linkAbout')) document.getElementById('linkAbout').innerHTML=data.linkAbout;
   //COMPRA
 
+  //ABOUT
+  if(document.getElementById('rip')) document.getElementById('rip').innerHTML=data.rip;
 
 }

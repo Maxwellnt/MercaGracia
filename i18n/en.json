@@ -25,5 +25,7 @@
         "textLabel": "Password",
         "placeHolder": "Write your password"
     },
-    "btn": "Register"
+    "btn": "Register",
+
+    "rip":"RIP ALEX :("
 }
