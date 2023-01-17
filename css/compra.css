@@ -44,18 +44,39 @@ nav ul li{
 #buyHead{
     background-color:rgba(0, 29, 61, 0.5);
     margin: auto;
-   margin-top: 1vw;
-
+    display: flex;
+    margin-top: 1vw;
     width: 98vw;
     height: 10vh;
-
     border: 0px;
     border-radius: 10px;
-    
     box-shadow: 1px 1px 1px 1px grey;
-    
+    justify-content: space-evenly;
+    align-items: center;
     
 }
+
+/**TODO: Dar a li una classe**/
+#buyHead > li{ 
+   
+    width: 100px;
+    height: 50px;
+
+    
+    text-align: center; /**Aline width**/
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#filtro1:checked{
+    width: 100px;
+    height: 50px;
+
+    background-color: rgb(255, 195, 0);
+}
+
+
 
 #buyBody{
     margin: 2vw 2vw 2vw;
@@ -79,6 +100,7 @@ margin: 1rem;
  
 }
 
+
 .price{
     
     width: 16vw;
@@ -94,17 +116,15 @@ margin: 1rem;
     
 }
 @keyframes price  {
-    
-} {
 
     0%{ 
-        background-size: 100% 100%;
+        background-size:  100%;
         
     
     }
 
     100%{
-        background-size: 100% 12vw;
+        background-size: 12vw;
     }
     
 }
