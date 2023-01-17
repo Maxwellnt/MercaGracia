@@ -1,0 +1,5 @@
+~ Rich Black FOGRA 29: rgb(0, 8, 20)
+~ Oxford Blue: rbg(0, 29, 61)
+~ Prussian Blue: rbg(0, 53, 102)
+~ Mikado Yellow: rgb(255, 195, 0)
+~ Gold Web Golden: rgb(255, 214, 10)

@@ -1,0 +1,24 @@
+{
+    "access":"Access control",
+    "firstName": {
+        "textLabel": "First Name",
+        "placeholder": "Ex: Charles"
+    },
+    "lastname": {
+        "textLabel": "Last name",
+        "placeHolder": "Ex: Watson"
+    },
+    "usuari": {
+        "textLabel": "User",
+        "placeHolder": "Ex: charleswatson99"
+    },
+    "mail": {
+        "textLabel": "Email",
+        "placeHolder": "Ex: charleswatson@gmail.com"
+    },
+    "passwd": {
+        "textLabel": "Password",
+        "placeHolder": "Write your password"
+    },
+    "btn": "Register"
+}
