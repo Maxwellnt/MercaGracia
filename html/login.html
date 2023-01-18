@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/login.css">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/index.js" defer></script>
     <title>Login|MERCAGRACIA</title>
 </head>
 <body>
@@ -18,42 +19,50 @@
         
         <nav>
             <ul id="navegacion">
-                <li><a href="./index.html">Inici</a></li>
-                <li><a href="about.html">Sobre Nosaltres</a></li>
-                <li><a href="compra.html">Compra Online</a></li>
-                <li><a href="./login.html">Login</a></li>
+                <li><a href="./index.html" id="linkInici">Inici</a></li>
+                <li><a href="about.html" id="linkAbout">Sobre Nosaltres</a></li>
+                <li><a href="compra.html" id="linkCompra">Compra Online</a></li>
+                <li><a href="./login.html" id="linkLogin">Login</a></li>
             </ul>
         </nav>
+
+        <button onclick="changeLanguage('ca')">Catala</button>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('es')">Español</button>
+
     </header>
     <main>
         <div class="caja">
-            <h3>Control d'accés</h3>
+            <h3 id="access">Control d'accés</h3>
             <form name="register">
                 <div class="form-group">
-                    <label for="first-name" class="is-required">Nom</label>
+                    <label for="first-name" class="is-required" id="firstName">Nom</label>
                     <input type="text" id="first-name" name="first-name" placeholder="Ex: Manolo" requierd>
                 </div>
                 <div class="form-group">
-                    <label for="last-name" class="is-required">Cognom</label>
+                    <label for="last-name" class="is-required" id="lastName">Cognom</label>
                     <input type="text" id="last-name" name="last-name" placeholder="Ex: García" >
                 </div>
                 <div class="form-group">
-                    <label for="usr" class="is-required">Usuari</label>
+                    <label for="usr" class="is-required" id="usuari">Usuari</label>
                     <input type="text" id="usr" name="usr" placeholder="Ex: manologarcia99" >
                 </div>
                 <div class="form-group">
-                    <label for="email" class="is-required">Email</label>
+                    <label for="email" class="is-required" id="mail">Email</label>
                     <input type="text" id="email" name="email" placeholder="Ex: manologarcia@gmail.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="pwd" class="is-required">Contraseña</label>
+                    <label for="pwd" class="is-required" id="passwd">Contraseña</label>
                     <input type="password" id="pwd" name="pwd" placeholder="Escriu la teva contrasenya" required>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn">Registrar-me</button>
+                    <button type="submit" class="btn" id="btn">Registrar-me</button>
                 </div>
             </form>
         </div>
+        <footer>
+
+        </footer>
     </main>
 </body>
 </html>

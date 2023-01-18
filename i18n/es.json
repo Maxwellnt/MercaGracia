@@ -1,0 +1,31 @@
+{
+    "linkInici":"Inicio",
+    "linkCompra":"Compra online",
+    "linkLogin":"Registro",
+    "linkAbout":"Sobre nosotros",
+
+    "access":"Control de acceso",
+    "firstName": {
+        "textLabel": "Nombre",
+        "placeholder": "Ex: Manolo"
+    },
+    "lastname": {
+        "textLabel": "Apellido",
+        "placeHolder": "Ex: García"
+    },
+    "usuari": {
+        "textLabel": "Usuario",
+        "placeHolder": "Ex: manologarcia99"
+    },
+    "mail": {
+        "textLabel": "Email ",
+        "placeHolder": "Ex: manologarcia@gmail.com"
+    },
+    "passwd": {
+        "textLabel": "Contraseña",
+        "placeHolder": "Escribe tu contraseña"
+    },
+    "btn": "Registrarme",
+
+    "rip":"DEP ALEX :("
+}

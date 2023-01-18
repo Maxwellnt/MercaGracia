@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="/css/main.css">
-
+    <script src="/js/index.js" defer></script>
     <title>Inici|MERCAGRACIA</title>
 </head>
 <body>
@@ -18,12 +18,17 @@
         
         <nav>
             <ul id="navegacion">
-                <li><a href="./index.html">Inici</a></li>
-                <li><a href="about.html">Sobre Nosaltres</a></li>
-                <li><a href="compra.html">Compra Online</a></li>
-                <li><a href="./login.html">Login</a></li>
+                <li><a href="./index.html" id="linkInici">Inici</a></li>
+                <li><a href="about.html" id="linkAbout">Sobre Nosaltres</a></li>
+                <li><a href="compra.html" id="linkCompra">Compra Online</a></li>
+                <li><a href="./login.html" id="linkLogin">Login</a></li>
             </ul>
         </nav>
+        
+        <button onclick="changeLanguage('ca')">Catala</button>
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('es')">Español</button>
+
     </header>
     <main>
         <div>

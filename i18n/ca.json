@@ -1,0 +1,31 @@
+{
+    "linkInici":"Inici",
+    "linkCompra":"Compra online",
+    "linkLogin":"Registre",
+    "linkAbout":"Sobre nosaltres",
+
+    "access":"Control d'accés",
+    "firstName": {
+        "textLabel": "Nom",
+        "placeholder": "Ex: Carles"
+    },
+    "lastname": {
+        "textLabel": "Cognom",
+        "placeHolder": "Ex: García"
+    },
+    "usuari": {
+        "textLabel": "Usuari",
+        "placeHolder": "Ex: carlesgarcia99"
+    },
+    "mail": {
+        "textLabel": "Email ",
+        "placeHolder": "Ex: carlesgarcia@gmail.com"
+    },
+    "passwd": {
+        "textLabel": "Contrasenya",
+        "placeHolder": "Escriu la teva contrasenya"
+    },
+    "btn": "Registrar-me",
+
+    "rip":"DEP ALEX :("
+}
