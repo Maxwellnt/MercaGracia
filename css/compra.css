@@ -44,104 +44,160 @@ nav ul li{
 #mainGrid{
 
 padding: 2vw;
+height: 70vh;
 display: grid;
+    
+    justify-content: center;
     grid-gap: 1rem;
-    grid-template-columns:auto;
-    grid-template-rows:auto;
+    grid-template-columns: auto; 
+    grid-template-rows:10vh, 30vh, 20vh;
     grid-template-areas:
-        "Alim Bazar "
-        "Alim Bazar"
-        "Alim Bazar";
+        "Alim  Merca Bazar"
+        "Alim  Merca Bazar"
+        "Alim  Merca Bazar";
   
+    background-color: rgba(0, 8, 20,0.2);
+
   }
 
-#alimentacioGrid{
-grid-area: Alim;
-margin: 2vw;
+    #alimentacioGrid{
+    grid-area: Alim;
+    padding: 1vw;
+    width: auto;
+    height: 62vh;
+    display: grid;
+        grid-gap: 1vh;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 30vw;
+        grid-template-rows: 10vh 30vh 20vh ;
 
-display: grid;
-    grid-gap: 0.5rem;
-    justify-items: center;
-    grid-template-columns:auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "textAlim"
-      "fotoAlim"
-      "descAlim";
+        grid-template-areas:
+        "textAlim"
+        "fotoAlim"
+        "descAlim";
 
-background-color: rgba(0, 8, 20,0.2);
-border: 0;
-border-radius: 4%;
-}
+    background-color: rgba(0, 8, 20,0.2);
 
-#bazarGrid{
-grid-area: Bazar;
-margin: 2vw;
+       
+   
+    }
 
-display: grid;
-    justify-items: center;
-    grid-gap: 1rem;
-    grid-template-columns:auto;
-    grid-template-rows:auto;
-    grid-template-areas:
-      
-      "textBazar"
-      "fotoBazar"
-      "descBazar";
+        .textAlimentacio{
+            grid-area: textAlim;
+            
+            font-size: 34px;
+            font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+        }
+        
+        .FotoAlimentacio{
+            grid-area: fotoAlim;
+            width: 30vw;
+            height: 30vh;
+        
+            background-image: url(../img/img-compra/Compra.webp);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .descAlimentacio{
+            grid-area: descAlim;
+            text-align: center;
+        }
 
-background-color: rgba(0, 8, 20,0.2);;
-border: 0;
-border-radius: 4%;
-}
 
+    #bazarGrid{
+    grid-area: Bazar;
+    padding: 1vw;
+    height: 62vh;   
+    width: auto;
+
+    display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 1vh;
+        grid-template-columns:auto; 
+        grid-template-rows: 10vh 30vh 20vh;
+        grid-template-areas:
+        
+        "textBazar"
+        "fotoBazar"
+        "descBazar";
+
+    background-color: rgba(0, 8, 20,0.2);;
   
-.textAlimentacio{
-    grid-area: textAlim;
+    }
 
-    font-size: 34px;
-    font-family: 'Fira Sans', sans-serif;
-    text-align: center;
-}
+        .textBazar{
+            grid-area: textBazar;
 
-.FotoAlimentacio{
-    grid-area: fotoAlim;
-    width: 100%;
-    height: 40vh;
+            font-size: 34px;
+            font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+        }
 
-    background-image: url(../img/img-compra/pan.webp);
-    background-size: 110% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.descAlimentacio{
-    grid-area: descAlim;
-    text-align: center;
-}
+        .FotoBazar{
+            grid-area: fotoBazar;
+            width: 30vw;
+            height: 30vh;
 
-.textBazar{
-    grid-area: textBazar;
+            background-image: url(../img/img-compra/bazar.webp);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-    font-size: 34px;
-    font-family: 'Fira Sans', sans-serif;
-    text-align: center;
- }
+        .descBazar{
+            grid-area: descBazar;
+            text-align: center;
 
-.FotoBazar{
-    grid-area: fotoBazar;
-    width: 40vw;
-    height: 40vh;
+        }
 
-    background-image: url(../img/img-compra/pan.webp);
-    background-size: 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+    #mercaTinderGrid{
+        grid-area: Merca;
+        padding: 1vw;
+        width: auto;
+        height: 62vh;
+        display: grid;
+            grid-gap: 1vh;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns:auto;
+            grid-template-rows: 10vh 30vh 20vh;;
+    
+            grid-template-areas:
+            "textMercaTinder"
+            "fotoMercaTinder"
+            "descMercaTinder";
+    
+        background-color: rgba(0, 8, 20,0.2);
+    
+    }
+        .textMercaTinder{
+            grid-area: textMercaTinder;
 
-.descBazar{
-    grid-area: descBazar;
-    text-align: center;
+            font-size: 34px;
+            font-family: 'Fira Sans', sans-serif;
+            text-align: center;
+        }
 
-}
+        .FotoMercaTinder{
+            grid-area: fotoMercaTinder;
+            width: 25vw;
+            height: 30vh;
+
+            background-image: url(../img/img-compra/MercaTindePH.webp);
+            background-size:contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .descMercaTinder{
+            grid-area: descMercaTinder;
+            text-align: center;
+
+        }
 
 /**Animacions**/
 
