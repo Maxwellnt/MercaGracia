@@ -11,7 +11,6 @@ a{
 h3{
     display: inline;
     font-size: 30px;
-    
 }
 .caja{
     
@@ -22,9 +21,6 @@ h3{
     width: 350px;
     border-radius: 15px;
     box-shadow: 5px 5px 40px; 
-
-
-    /* filter: blur(1.5px) brightness(0.88); */
 } 
 .form-group{
     padding: 10px;
@@ -32,7 +28,6 @@ h3{
     justify-content: space-between;
     gap: 5px;
 }
-
 @media(max-width:480px){
     main{
         height: 55vh
@@ -51,9 +46,6 @@ h3{
         width: 300px;
         border-radius: 7.5px;
         box-shadow: 2.5px 2.5px 20px; 
-    
-    
-        /* filter: blur(1.5px) brightness(0.88); */
     } 
     .form-group{
         padding: 4px;
@@ -61,7 +53,6 @@ h3{
         justify-content: space-between;
         gap: 1.5px;
     }
-    
     ul {
     display: flex;
     }
@@ -72,12 +63,11 @@ h3{
 }
 @media(min-width:480px) and (max-width:992px){
     body{
-        font-size: 25px;
+        font-size: 30px;
     }
     h3{
         display: inline;
-        font-size: 40px;
-        
+        font-size: 60px;
     }
     #navegacion{
         text-align: center;
@@ -90,13 +80,10 @@ h3{
         display: inline;
         background-color: rgb(255, 214,0);   
         text-align: center;
-        height: 400px;
-        width: 350px;
+        height: 450px;
+        width: 550px;
         border-radius: 9px;
         box-shadow: 3px 3px 30px; 
-    
-    
-        /* filter: blur(1.5px) brightness(0.88); */
     } 
     .form-group{
         padding: 6px;
@@ -111,6 +98,9 @@ h3{
         flex: 0 0 auto; 
         margin-right:1px; 
         }
+    a{
+        font-size: 30px;
+    }
 }
 @media(min-width:992px) and (max-width:1200px){
     body{
@@ -119,7 +109,6 @@ h3{
     h3{
         display: inline;
         font-size: 45px;
-        
     }
     #navegacion{
         text-align: center;
@@ -132,13 +121,10 @@ h3{
         display: inline;
         background-color: rgb(255, 214,0);   
         text-align: center;
-        height: 420px;
+        height: 400px;
         width: 380px;
         border-radius: 9px;
         box-shadow: 3px 3px 30px; 
-    
-    
-        /* filter: blur(1.5px) brightness(0.88); */
     } 
     .form-group{
         padding: 6px;
@@ -146,7 +132,6 @@ h3{
         justify-content: space-between;
         gap: 2px;
     }
-    
 }
 @media(min-width:1200px){
     body{
@@ -155,7 +140,6 @@ h3{
     h3{
         display: inline;
         font-size: 52px;
-        
     }
     #navegacion{
         text-align: center;
@@ -172,9 +156,6 @@ h3{
         width: 420px;
         border-radius: 9px;
         box-shadow: 3px 3px 30px; 
-    
-    
-        /* filter: blur(1.5px) brightness(0.88); */
     } 
     .form-group{
         padding: 6px;
@@ -183,4 +164,3 @@ h3{
         gap: 2px;
     }
 }
-
