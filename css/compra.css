@@ -2,6 +2,7 @@ html{
     font-size: 16px;
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    
 }
 a{
     text-decoration:none;
@@ -41,172 +42,361 @@ nav ul li{
     text-align:center;
 }
 
+@media (max-width: 480px) { /**Mobile**/
 #mainGrid{
-
-padding: 2vw;
-height: 70vh;
-display: grid;
-    
-    justify-content: center;
-    grid-gap: 1rem;
-    grid-template-columns: auto; 
-    grid-template-rows:10vh, 30vh, 20vh;
+    width: 95vw;
+    padding: 2vw;
+    grid-gap: 2vw;
+    grid-template-columns: 46vw 46vw; 
+    grid-template-rows:auto;
     grid-template-areas:
-        "Alim  Merca Bazar"
-        "Alim  Merca Bazar"
-        "Alim  Merca Bazar";
-  
-    background-color: rgba(0, 8, 20,0.2);
+        "Alim Bazar "
+        "Alim Bazar "
+        "Merca Merca ";
+}
+
+.subGrid{
+    grid-template-columns: auto;
+    display: grid;
+    padding: 2vw;
+    height: 50vh;
+    grid-gap: 1vh;
+}
+
+        #alimentacioGrid{
+            height: 41vh;
+            grid-template-rows: 10vh 30vh;
+            grid-template-areas:
+                "textAlim"
+                "fotoAlim";
+        }
+
+        #bazarGrid{
+            height: 41vh;
+            grid-template-rows: 10vh 30vh;
+            grid-template-areas:
+                "textBazar"
+                "fotoBazar";
+        }
+
+        #mercaTinderGrid{
+            height: 20vh;
+            grid-template-areas:
+            "textMercaTinder fotoMercaTinder";
+        }
+
+        .titleGrid{
+            font-size: 20px;
+        }
+
+    .fotoGrid{
+        width: 40vw;
+        height: 30vh;
+    }
+    
+        #FotoMercaTinder{
+            width: 30vw;
+            height: 20vh;
+        }
+
+
+    #descMercaTinder{
+        display:none;
+    }
+    #descBazar{
+        display:none;
+    }
+    #descAlimentacio{
+        display:none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) { /**Tablet**/
+    #mainGrid{
+        width: 95vw;
+        padding: 2vw;
+        grid-gap: 2vw;
+        grid-template-columns: 46vw 46vw; 
+        grid-template-rows:auto;
+        grid-template-areas:
+            "Alim Bazar "
+            "Alim Bazar "
+            "Merca Merca ";
+    }
+    
+    .subGrid{
+        grid-template-columns: auto;
+        display: grid;
+        padding: 2vw;
+        height: 50vh;
+        grid-gap: 1vh;
+    }
+    
+            #alimentacioGrid{
+                height: 41vh;
+                grid-template-rows: 10vh 30vh;
+                grid-template-areas:
+                    "textAlim"
+                    "fotoAlim";
+            }
+    
+            #bazarGrid{
+                height: 41vh;
+                grid-template-rows: 10vh 30vh;
+                grid-template-areas:
+                    "textBazar"
+                    "fotoBazar";
+            }
+    
+            #mercaTinderGrid{
+                height: 20vh;
+                grid-template-areas:
+                "textMercaTinder fotoMercaTinder";
+            }
+    
+            .titleGrid{
+                font-size: 20px;
+            }
+    
+        .fotoGrid{
+            width: 40vw;
+            height: 30vh;
+        }
+        
+            #FotoMercaTinder{
+                width: 30vw;
+                height: 20vh;
+            }
+    
+    
+        #descMercaTinder{
+            display:none;
+        }
+        #descBazar{
+            display:none;
+        }
+        #descAlimentacio{
+            display:none;
+        }
+}
+
+@media (min-width: 769px){ /*Laptop*/
+    #mainGrid{
+        width: auto;
+        height: auto;
+
+        padding: 1vw;
+        padding: 3vh;
+        padding-bottom: 3vh;
+        
+        grid-template-columns: auto; 
+        grid-template-rows:auto;
+        grid-gap: 1vw;
+
+        grid-template-areas:
+            "Alim  Merca Bazar"
+            "Alim  Merca Bazar"
+            "Alim  Merca Bazar";
+        }
+
+    .subGrid{
+        width: auto;
+        height: 62vh;
+
+        padding: 1vw;
+
+        display: grid;
+
+        grid-template-columns: auto;
+        grid-template-rows: 10vh 30vh 20vh;
+        grid-gap: 1vh;
+
+    }
+
+        #alimentacioGrid{
+            grid-template-areas:
+                "textAlim"
+                "fotoAlim"
+                "descAlim";
+        }
+
+        #bazarGrid{
+            grid-template-areas:
+                "textBazar"
+                "fotoBazar"
+                "descBazar";
+        }
+
+        #mercaTinderGrid{
+            width: 20vw;
+
+            grid-template-columns: 20vw;
+
+            grid-template-areas:
+                "textMercaTinder"
+                "fotoMercaTinder"
+                "descMercaTinder";
+        }
+
+    .titleGrid{
+        max-width: 30vw;
+        font-size: 2.5vw ;   
+        
+    }
+
+
+    .fotoGrid{
+        width: 30vw;
+        height: 30vh;
+
+    
+        
+    }
+
+
+}
+
+
+
+
+#mainGrid{
+    display: grid;
+    justify-content:center;
+    background-color: rgb(227, 246, 255);
 
   }
 
-    #alimentacioGrid{
-    grid-area: Alim;
-    padding: 1vw;
-    width: auto;
-    height: 62vh;
+
+.subGrid{
     display: grid;
-        grid-gap: 1vh;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: 30vw;
-        grid-template-rows: 10vh 30vh 20vh ;
+    justify-items: center;
+    align-items: center;
+    background-color: rgba(0, 8, 20,0.2);    
+}
+    #alimentacioGrid{grid-area: Alim;}
+    #bazarGrid{grid-area: Bazar;}
+    #mercaTinderGrid{grid-area: Merca;}
 
-        grid-template-areas:
-        "textAlim"
-        "fotoAlim"
-        "descAlim";
 
-    background-color: rgba(0, 8, 20,0.2);
+.titleGrid{
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+     
+}
+    #titleAlimentacio{grid-area: textAlim;}
+    #titleBazar{grid-area: textBazar;}    
+    #titleMercaGraica{grid-area: textMercaTinder;}
+ 
 
-       
-   
+.fotoGrid{
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}    
+    #FotoAlimentacio{
+         grid-area: fotoAlim;
+         background-image:  url(../img/img-compra/Compra.webp);
+    }
+        
+    #FotoBazar{
+        grid-area: fotoBazar;
+        background-image: url(../img/img-compra/bazar.webp);
     }
 
-        .textAlimentacio{
-            grid-area: textAlim;
-            
-            font-size: 34px;
-            font-family: 'Fira Sans', sans-serif;
-            text-align: center;
-        }
-        
-        .FotoAlimentacio{
-            grid-area: fotoAlim;
-            width: 30vw;
-            height: 30vh;
-        
-            background-image: url(../img/img-compra/Compra.webp);
-            background-size:contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        .descAlimentacio{
-            grid-area: descAlim;
-            text-align: center;
-        }
-
-
-    #bazarGrid{
-    grid-area: Bazar;
-    padding: 1vw;
-    height: 62vh;   
-    width: auto;
-
-    display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-gap: 1vh;
-        grid-template-columns:auto; 
-        grid-template-rows: 10vh 30vh 20vh;
-        grid-template-areas:
-        
-        "textBazar"
-        "fotoBazar"
-        "descBazar";
-
-    background-color: rgba(0, 8, 20,0.2);;
-  
+    #FotoMercaTinder{
+        grid-area: fotoMercaTinder;  
+        background-image: url(../img/img-compra/MercaTindePH.webp);  
     }
 
-        .textBazar{
-            grid-area: textBazar;
-
-            font-size: 34px;
-            font-family: 'Fira Sans', sans-serif;
-            text-align: center;
-        }
-
-        .FotoBazar{
-            grid-area: fotoBazar;
-            width: 30vw;
-            height: 30vh;
-
-            background-image: url(../img/img-compra/bazar.webp);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .descBazar{
-            grid-area: descBazar;
-            text-align: center;
-
-        }
-
-    #mercaTinderGrid{
-        grid-area: Merca;
-        padding: 1vw;
-        width: 25vw;
-        height: 62vh;
-        display: grid;
-            grid-gap: 1vh;
-            align-items: center;
-            justify-items: center;
-            grid-template-columns:auto;
-            grid-template-rows: 10vh 30vh 20vh;
-    
-            grid-template-areas:
-            "textMercaTinder"
-            "fotoMercaTinder"
-            "descMercaTinder";
-    
-        background-color: rgba(0, 8, 20,0.2);
-    
+    .descGrid{
+        text-align: center;
     }
-        .textMercaTinder{
-            grid-area: textMercaTinder;
-
-            font-size: 34px;
-            font-family: 'Fira Sans', sans-serif;
-            text-align: center;
-        }
-
-        .FotoMercaTinder{
-            grid-area: fotoMercaTinder;
-            width: 24vw;
-            height: 40vh;
-
-            background-image: url(../img/img-compra/MercaTindePH.webp);
-            background-size:contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .descMercaTinder{
+    
+        #descMercaTinder{
             grid-area: descMercaTinder;
-            text-align: center;
+            
+        }
 
+        #descAlimentacio{
+            grid-area: descAlim;
+           
+        }
+        #descBazar{
+            grid-area: descBazar;
+            
         }
 
 /**Animacions**/
 
-.shadowHover{
-    box-shadow: 0px 0px 0px gray;
+.subGrid{
+    box-shadow: 0px 0px 0px rgb(141, 203, 230);
     transition: box-shadow 1s;
     transition-property: all;
 }
 
-.shadowHover:hover{
-box-shadow: 10px 10px 5px gray;
+.subGrid:hover{
+background-color: rgba(0, 8, 20,0.1);
+box-shadow: 10px 12px 5px rgb(141, 203, 230);
+
 }
+
+
+/** Selection **/
+
+div.showCase{
+    margin: 5vw;
+    width: 90vw;
+    height: 80vw;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    
+    align-content: stretch;
+}
+
+
+div.producte {
+    
+    margin: 0.5rem;
+    border: 1px solid #ccc;
+    float: left;
+    width: 20em;
+    height: 25em;
+  }
+    div.producte a{
+        background-color: white;
+        
+    }
+
+    div.producte img {
+        width: 20em;
+        height: 20em;
+    }
+
+  div.buy{
+    height: 5em;
+    background-color: white;
+    display: flex;
+    border: 1px  solid #ccc;
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw;
+    
+  }
+    div.buy > p{
+        text-align: center;
+        font-size: 2vw;
+        text-overflow: ellipsis;
+    }
+    div.buy > button{
+        background-color: rgb(255, 242, 0);
+        border: none;
+        width: 8vw;
+        height: 5vh;
+        font-size: 1.6vw;
+    }
+
