@@ -22,18 +22,18 @@ async function changeLanguage(lang) {
   // document.getElementById('').innerHTML='testing';
 
   //LOGIN
- if(document.getElementById('access')) document.getElementById('access').innerHTML=data.access;
- if(document.getElementById('firstName')) document.getElementById('firstName').innerHTML=data.firstName.textLabel;
- if(document.getElementById('firstName')) document.getElementById('firstName').placeHolder=data.firstName.placeholder;
- if(document.getElementById('lastName')) document.getElementById('lastName').innerHTML=data.lastname.textLabel;
- if(document.getElementById('lastName')) document.getElementById('lastName').placeHolder=data.lastname.placeHolder;
- if(document.getElementById('usuari')) document.getElementById('usuari').innerHTML=data.usuari.textLabel;
- if(document.getElementById('usuari')) document.getElementById('usuari').placeHolder=data.usuari.placeHolder;
- if(document.getElementById('mail')) document.getElementById('mail').innerHTML=data.mail.textLabel;
- if(document.getElementById('mail')) document.getElementById('mail').placeHolder=data.mail.placeHolder;
- if(document.getElementById('passwd')) document.getElementById('passwd').innerHTML=data.passwd.textLabel;
- if(document.getElementById('passwd')) document.getElementById('passwd').placeHolder=data.passwd.placeHolder;
- if(document.getElementById('btn')) document.getElementById('btn').innerHTML=data.btn;
+  if(document.getElementById('access')) document.getElementById('access').innerHTML=data.access;
+  if(document.getElementById('firstName')) document.getElementById('firstName').innerHTML=data.firstName.textLabel;
+  if(document.getElementById('firstName')) document.getElementById('firstName').placeHolder=data.firstName.placeholder;
+  if(document.getElementById('lastName')) document.getElementById('lastName').innerHTML=data.lastname.textLabel;
+  if(document.getElementById('lastName')) document.getElementById('lastName').placeHolder=data.lastname.placeHolder;
+  if(document.getElementById('usuari')) document.getElementById('usuari').innerHTML=data.usuari.textLabel;
+  if(document.getElementById('usuari')) document.getElementById('usuari').placeHolder=data.usuari.placeHolder;
+  if(document.getElementById('mail')) document.getElementById('mail').innerHTML=data.mail.textLabel;
+  if(document.getElementById('mail')) document.getElementById('mail').placeHolder=data.mail.placeHolder;
+  if(document.getElementById('passwd')) document.getElementById('passwd').innerHTML=data.passwd.textLabel;
+  if(document.getElementById('passwd')) document.getElementById('passwd').placeHolder=data.passwd.placeHolder;
+  if(document.getElementById('btn')) document.getElementById('btn').innerHTML=data.btn;
 
   //INDEX
   if(document.getElementById('linkInici')) document.getElementById('linkInici').innerHTML=data.linkInici;
@@ -44,5 +44,4 @@ async function changeLanguage(lang) {
 
   //ABOUT
   if(document.getElementById('rip')) document.getElementById('rip').innerHTML=data.rip;
-
 }
