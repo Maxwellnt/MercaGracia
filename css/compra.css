@@ -3,6 +3,7 @@ html{
     background-color: white;
     font-family: 'Roboto', sans-serif;
     
+    
 }
 a{
     text-decoration:none;
@@ -344,59 +345,136 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
 
 /** Selection **/
 
-div.showCase{
-    margin: 5vw;
-    width: 90vw;
-    height: 80vw;
+#sectionAlimentacio{
+    display: grid;
+
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-    display: flex;
-    justify-content:flex-start;
-    flex-wrap: wrap;
+
+    margin-top: 10rem;
+    padding: 2vw;
+
     
-    align-content: stretch;
+    
+}
+
+.Header{
+   
+    font-size: 10em;
+    text-align:start;
+
+    border-bottom: 6px solid black;
 }
 
 
-div.producte {
-    
-    margin: 0.5rem;
-    border: 1px solid #ccc;
-    float: left;
-    width: 20em;
-    height: 25em;
-  }
-    div.producte a{
-        background-color: white;
-        
-    }
-
-    div.producte img {
-        width: 20em;
-        height: 20em;
-    }
-
-  div.buy{
-    height: 5em;
-    background-color: white;
+.showCase{
     display: flex;
-    border: 1px  solid #ccc;
+  
+    justify-content: space-around;
+    transition: all 1s;
+    width: 90vw;
+
+    margin: 3rem;
+
     
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5vw;
     
-  }
-    div.buy > p{
-        text-align: center;
-        font-size: 2vw;
-        text-overflow: ellipsis;
+}
+
+
+    div.producte {
+        justify-self: stretch;
+        display: grid;
+        
+        margin: 0.5rem;
+        border: 1px solid #ccc;
+        float: left;
+        min-width: 20em;
+        height: 23em;
+        
+        grid-template-areas:
+                "img des "
+                "buy des "
+                ;
+            
     }
-    div.buy > button{
-        background-color: rgb(255, 242, 0);
-        border: none;
-        width: 8vw;
-        height: 5vh;
-        font-size: 1.6vw;
+  
+        div.producte img {
+            grid-area: img;
+
+            width: 20em;
+            height: 20em;
+        }
+
+        div.buyBox{
+            grid-area: buy;
+            
+            background-color: white;
+            display: flex;
+            border: 1px  solid #ccc;
+            flex-direction: column;
+            align-items: center;
+            
+            padding-bottom: 0em;
+
+            transition-property: all;
+            
+        }
+            div.buyBox > p{
+                text-align: center;
+                font-size: 2em;
+                
+                text-overflow: ellipsis;
+            }
+            div.buyBox > button{
+                background-color: rgb(255, 242, 0);
+                border: none;
+                margin: 0.5em;
+                width: 19em;
+                height: 2em;
+                font-size: 1em;
+                font-weight: bold;
+            }
+
+    .descBox{
+    
+         
+    grid-area: des;
+    
+    width: 0vw;
+    max-height: 100%;
+    background-color: white;
+    color: white;
+   
+    transition: all 1s;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
     }
 
+        .Name{
+            margin: 0.5rem 0rem 0.5rem 0rem;
+                font-size: 2.5rem;
+                font-weight: bold;
+                text-overflow:clip;   
+                
+        }
+
+
+        .Price{
+            margin: 0.5rem 0rem 0.5rem 0rem;
+                font-size: 2rem;
+                text-overflow:clip;
+        }
+
+        .Text{
+            font-size: 1.1em;
+            text-overflow: clip;
+        
+        }
+
+
+        .producte:hover .descBox{
+            padding: 1.5vw; 
+            width: 15vw;
+            color: black;
+        }  
+      
