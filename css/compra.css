@@ -342,12 +342,18 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
 
 }
 
+/** ============================================= **/
+/** ======= Selection Alimentacio & Bazar ======= **/
+/** ============================================= **/
 
-/** Selection **/
+/**Responsibe**/
+
+
 
 #sectionAlimentacio{
-    display: grid;
-
+    display: flex;
+    justify-content: center ;
+    flex-direction: column;
     background-color: #85FFBD;
     background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 
@@ -358,123 +364,176 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
     
 }
 
-.Header{
-   
-    font-size: 10em;
-    text-align:start;
+#sectionBazar{
+    display: flex;
 
-    border-bottom: 6px solid black;
+    justify-content: center ;
+    flex-direction: column;
+
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+    margin-top: 10rem;
+    padding: 2vw;
 }
 
+.Header{
+    display: block;
+    
+    font-size: 10vw;
+    text-align:start;
+    text-shadow: 2px 2px 5px lightgrey;
+
+    border-bottom: 0.4vw solid black;
+}
 
 .showCase{
-    display: flex;
-  
-    justify-content: space-around;
-    transition: all 1s;
-    width: 90vw;
+    display: grid;
 
-    margin: 3rem;
+    grid-template-columns: max-content max-content max-content;
 
-    
-    
+    justify-content: center;
+    row-gap: 2vw;
+    column-gap: 1.3rem;
+   
+
+    margin: 3rem 2rem 3rem 2rem;
 }
 
 
-    div.producte {
+    div.producte { /**Objecte**/
         justify-self: stretch;
         display: grid;
         
-        margin: 0.5rem;
-        border: 1px solid #ccc;
-        float: left;
-        min-width: 20em;
-        height: 23em;
-        
+        width: 20vw;
+        max-height: 21vw;
+
+        margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+        grid-template-rows: 20vw;
+
         grid-template-areas:
                 "img des "
-                "buy des "
+                "buy buy "
                 ;
             
     }
   
-        div.producte img {
+        div.producte img { /**Imagte**/
             grid-area: img;
 
-            width: 20em;
-            height: 20em;
+            width: 20vw;
+            height: 20vw;
+
+            border: 2px solid lightgray;
+            border-right: 0px;
+            
+            transition: all 1s;
         }
 
-        div.buyBox{
+        div.buyBox{/**BuyBotton**/
             grid-area: buy;
-            
-            background-color: white;
+
             display: flex;
-            border: 1px  solid #ccc;
+
             flex-direction: column;
             align-items: center;
-            
+
+            min-width: 20vw;
+            z-index: 1;
+
+            background-color: white;
+
+            border: 2px solid lightgray;
+            border-top: 0px;
+
             padding-bottom: 0em;
 
-            transition-property: all;
-            
+            transition: all 1s;
         }
-            div.buyBox > p{
-                text-align: center;
-                font-size: 2em;
-                
-                text-overflow: ellipsis;
-            }
             div.buyBox > button{
+                width: 90%;
+                height: 2vw;
+
                 background-color: rgb(255, 242, 0);
-                border: none;
-                margin: 0.5em;
-                width: 19em;
-                height: 2em;
+                
                 font-size: 1em;
                 font-weight: bold;
+
+                border: none;
+                margin: 0.5em;
+                
             }
 
     .descBox{
-    
-         
     grid-area: des;
-    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     width: 0vw;
-    max-height: 100%;
+    max-height: 20vw;
+
+    z-index: 8;
+ 
     background-color: white;
     color: white;
-   
+
+    border: 2px solid lightgray;
+    border-left: 0px;
+    border-bottom: 0px;
+
     transition: all 1s;
     transition-timing-function: ease-in-out;
+
     overflow: hidden;
     }
 
         .Name{
-            margin: 0.5rem 0rem 0.5rem 0rem;
-                font-size: 2.5rem;
+            margin: 1vh 0rem 1vh 0rem;
+                font-size: 2.3rem;
                 font-weight: bold;
-                text-overflow:clip;   
+                text-overflow: ellipsis;  
                 
         }
 
 
         .Price{
-            margin: 0.5rem 0rem 0.5rem 0rem;
+            margin: 1vh 0rem 1vh 0rem;
                 font-size: 2rem;
                 text-overflow:clip;
         }
 
-        .Text{
-            font-size: 1.1em;
+        div.Text{
+            margin-bottom: 1vh;
+            font-size: 1em;
+            
+            align-self: flex-end;
             text-overflow: clip;
+            overflow-y: auto;
+            
         
         }
 
 
         .producte:hover .descBox{
-            padding: 1.5vw; 
-            width: 15vw;
+            padding: 1.5rem; 
+            width: 13vw;
             color: black;
+            border: 2px solid black;
+            border-left: 0px;
+            border-bottom: 0px;
         }  
       
+        .producte:hover .buyBox{
+            z-index: 9;
+            border: 2px solid black;
+            border-top: 0px;
+        }
+
+        .producte:hover > img{
+            
+            border: 2px solid black; 
+            border-bottom: 0px;
+            border-right: 0px;
+        }
