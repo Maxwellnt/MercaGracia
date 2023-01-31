@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Philosopher:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html{
+    background-color: rgb(237, 237, 237);
+    font-family: 'Bree Serif',Sans-serif;
+}
+
+header{
+    background-color: white;
+    display:flex;
+    justify-content: space-evenly;
+    gap:2rem;
+    align-items: center;
+}
+
+#Logo{
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    padding: 1rem;
+
+}
+
+.nav_element{
+    display: inline;
+    margin-inline: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav_link{
+    font-size: 1.2rem;
+    color:rgb(0,66,151);
+    transition: border-bottom, color, 0.25s;
+}
+
+.nav_link:hover{
+    border-bottom: 4px solid rgb(77, 154, 255);
+    color:rgb(77, 154, 255);
+}
+
+.user{
+    width: 1rem;
+    height: auto;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+
+
+.primera_seccio{
+    background-image: url('../img/fotoinicio.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    background-color:rgb(254,238,150);
+    display:grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.primera_seccio p{
+    font-size: 3rem;
+    font-family: 'Aboreto', sans-serif;
+    color:rgb(0,66,151);
+    text-shadow: 0.1rem 0.1rem #333;
+    margin:6.5rem;
+}
+
+#segunda_seccion{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+
+.containerA{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerB{
+    width: 100%;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(231, 231, 231);
+
+}
+
+#foto_trabajadores{
+    width: auto;
+    height: 22rem;
+    padding:1.5rem;
+    margin:3rem;
+}
+
+#textA{
+    justify-content: left;
+    border-radius: 1rem ;
+    width: 80%;
+}
+
+#textA h2{
+    padding: 1rem;
+    font-size: 2.5rem;
+}
+
+#textA p{
+    padding: 1rem;
+    padding-top: 0;
+    padding-left: 1rem;
+    width: auto;
+    font-size: 1.1rem;
+}
+
+#textB{
+    justify-content: right;
+    border-radius: 1rem ;
+    width: 70%;
+}
+
+#textB h2{
+    padding: 1rem;
+    font-size: 2.5rem;;
+    
+}
+
+#textB p{
+    padding: 1rem;
+    
+    padding-top: 0;
+    padding-right: 1rem;
+    width: auto;
+    font-size: 1.1rem;
+    color:rgb(55, 55, 55)
+}
+
+#foto_trabajadora{
+    width: auto;
+    height: 22rem;
+    padding:1.5rem;
+    margin:3rem;
+    border-radius: 1rem;
+}
+
+footer{
+    background-color:  rgb(0,66,151);
+    width: 100%;
+    height: 40vh;
+    color: white;
+}
+
+#mainFooter{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 2rem;
+}
+
+.footer_container h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logosRedes{
+    width:auto;
+    height: 4vh;
+    margin-inline: 1rem;
+    margin-inline-start: 0;
+    padding-left: 0;
+    filter:brightness(0.70);
+    transition: filter, 0.4s;
+}
+
+.logosRedes:hover{
+    filter:brightness(1);
+}
+.list_footer_element{
+    margin: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.list_footer_element p{
+    color:rgb(177,177,177);
+}
+
+
+.info_element{
+    text-decoration: none;
+    color:rgb(177,177,177);
+    transition: color, 0.4s;
+}
+
+.info_element:hover{
+    color: white;
+}
+
+.contact_icons{
+    width: auto;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+
+#final{
+    display:flex;
+    justify-content: space-around;
+    color:rgb(141, 141, 181);
+    font-size: 0.80rem;
+    margin-top: 3.5em;
+}
+
+.final_element{
+    display: inline;
+    margin-inline: 1em;
+    transition: color, 0.5s;
+}
+
+
+.final_element:hover{
+    cursor: pointer;
+    color:aliceblue;
+}
+
+@media (max-width:1320px){
+    .primera_seccio{
+        background-image: url('../img/fotoinicio.png');
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: contain;
+        width: 100%;
+        height: auto;
+        background-color:rgb(254,238,150);
+        display:grid;
+        grid-template-columns: 30% 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .primera_seccio p{
+        font-size: 2rem;
+        font-family: 'Aboreto', sans-serif;
+        color:rgb(0,66,151);
+        text-shadow: 0.1rem 0.1rem #333;
+        margin:3rem;
+    }
+}
+

@@ -8,40 +8,7 @@ html{
 a{
     text-decoration:none;
 }
-header{
-    background: white;
-}
 
-#logo {
-    max-width: 50%;
-    height: auto;
-    display: block;
-    margin-top: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#navegacion{
-    text-align: center;
-    margin-top:1rem;
-    padding: 1rem;
-    background-color: rgb(0,150,96);
-}
-
-nav ul li{
-    display: inline;
-    font-size: 18px;
-    border: 3px solid red;
-    border-radius: 15px;
-    background-color: aliceblue;
-    margin:1rem;
-    padding-left: 1vw;
-    padding-right: 1vw;
-}
-
-.linksfooter{
-    text-align:center;
-}
 
 /** ============================================= **/
 /** =============== GRID SECTON ================= **/
@@ -485,6 +452,7 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
     .sectionBuy{
         margin-top: 2vh;
         padding: 2vw;
+        padding-bottom: 4rem;
     }
     
     .Header{
@@ -525,6 +493,7 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
             border-bottom: 0px;
 
             transition: all 1s; 
+            transition-timing-function: ease-in-out;
         }
     
     
@@ -553,14 +522,8 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
             width: 90%;
             height: 2rem;
     
-            background-color: rgb(255, 242, 0); /**Quitar**/
-            
             font-size: 1rem;
-            font-weight: bold; /**Quitar**/
-    
-            border: none; /**Quitar**/
-            margin: 0.5rem; 
-            
+            margin: 0.5rem;   
         }
     
     
@@ -624,13 +587,18 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
        border: 2px solid black;
         border-top: 0px;
     }
+
+    .producte:hover img{
+        border: 2px solid black;
+            border-bottom: 0px;
+    }
  
     
 }
 @media (min-width: 801px) and (max-width: 1400px) { /**Laptop**/
     .sectionBuy{
         margin-top: 2vh;
-        padding: 2vw;
+        padding: 5rem;
     }
     
     .Header{
@@ -682,7 +650,7 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
     
     
     .buyBox{
-        grid-area: buy; /**Quitar**/
+        grid-area: buy; 
     
         display: flex; 
     
@@ -692,8 +660,7 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
         min-width: 10rem;
         z-index: 1;
     
-        background-color: white; /**Quitar**/
-    
+        background-color: white;
         border: 2px solid lightgray;
         border-top: 0px;
 
@@ -707,21 +674,21 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
             width: 90%;
             height: 2rem;
     
-            background-color: rgb(255, 242, 0); /**Quitar**/
+            background-color: rgb(255, 242, 0); 
             
             font-size: 1rem;
-            font-weight: bold; /**Quitar**/
+            font-weight: bold; 
     
-            border: none; /**Quitar**/
+            border: none; 
             margin: 0.5rem; 
             
         }
     
     
     .descBox{
-        grid-area: des; /**Quitar**/
+        grid-area: des; 
     
-        display: flex; /**Quitar**/
+        display: flex; 
         flex-direction: column;
         justify-content: space-around;
     
@@ -1004,10 +971,15 @@ box-shadow: 10px 12px 5px rgb(141, 203, 230);
         }
             div.buyBox > button{       
                 background-color: rgb(255, 242, 0);
-                
+                cursor: pointer;
                 font-weight: bold;
         
                 border: none; 
+                transition: background-color 0.5s;
+            }
+
+            .buyBox > button:active{
+            background-color: rgb(175, 166, 0); 
             }
 
     .descBox{

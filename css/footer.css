@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Yeseva+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Philosopher:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+html{
+    background-color: rgb(237, 237, 237);
+    font-family: 'Bree Serif',Sans-serif;
+}
+
+footer{
+    background-color:  rgb(0,66,151);
+    width: 100%;
+    height: 40vh;
+    color: white;
+}
+
+#mainFooter{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 2rem;
+}
+
+.footer_container h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logosRedes{
+    width:auto;
+    height: 4vh;
+    margin-inline: 1rem;
+    margin-inline-start: 0;
+    padding-left: 0;
+    filter:brightness(0.70);
+    transition: filter, 0.4s;
+}
+
+.logosRedes:hover{
+    filter:brightness(1);
+}
+.list_footer_element{
+    margin: 1rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.list_footer_element p{
+    color:rgb(177,177,177);
+}
+
+
+.info_element{
+    text-decoration: none;
+    color:rgb(177,177,177);
+    transition: color, 0.4s;
+}
+
+.info_element:hover{
+    color: white;
+}
+
+.contact_icons{
+    width: auto;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+}
+
+
+#final{
+    display:flex;
+    justify-content: space-around;
+    color:rgb(141, 141, 181);
+    font-size: 0.80rem;
+    margin-top: 3.5em;
+}
+
+.final_element{
+    display: inline;
+    margin-inline: 1em;
+    transition: color, 0.5s;
+}
+
+
+.final_element:hover{
+    cursor: pointer;
+    color:aliceblue;
+}

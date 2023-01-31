@@ -27,5 +27,53 @@
     },
     "btn": "Register",
 
-    "rip":"RIP ALEX :("
+    "rip":"RIP ALEX :(",
+
+    "titleAlimentacio": "Food",
+    "titleBazar": "Bazar",
+    "descAlimentacio" : "Go",
+    "descBazar": "Go",
+    
+    "Button": "Add to Cart",
+    "headerAlimentacio":"Food",
+    "namePan": "Homemade Bread",
+    "nameArroz": "White Rice",
+    "nameChoco": "Chocolate",
+    "ButtonPan": "Add to Cart",
+    "buttonChoco": "Add to Cart",
+    "buttonArroz": "Add to Cart",
+    "buttonLlet": "Add to Cart",
+    "buttonOran": "Add to Cart",
+    "buttonSan": "Add to Cart",
+    "nameLlet": "Asturian Milk",
+    "nameOran": "Batch of 5 Oranges",
+    "nameSan": "Watermelon",
+
+    "buttonCalc": "Add to Cart",
+    "buttonDes": "Add to Cart",
+    "buttonLim": "Add to Cart",
+    "buttonMaz": "Add to Cart",
+    "buttonTaz": "Add to Cart",
+    "buttonToa": "Add to Cart",
+    
+    "nameCalc": "Calculator",
+    "nameDes": "Electric Screwdriver",
+    "nameLim": "Window cleaner",
+    "nameMaz": "Pack of 4 Pots",
+    "nameTaz": "Thermal Mug",
+    "nameToa": "Pack of 6 towels",
+
+    "inici": "Home",
+    "sobreNosotros": "About",
+    "compraOnline": "eMarket",
+
+    "client": "Customer",
+    "company": "Company",
+    "follow": "Follow us on",
+    "contact": "Contact",
+    "compraonline": "eMarket",
+    "FAQS": "FAQS",
+    "supermercats": "Supermarkets",
+    "trabaja": "Work with us",
+    "franquicia": "Open your franchise"
 }

@@ -27,5 +27,59 @@
     },
     "btn": "Registrar-me",
 
-    "rip":"DEP ALEX :("
+    "rip":"DEP ALEX :(",
+
+    
+    
+    "titleAlimentacio": "Alimentació",
+    "titleBazar": "Bazar",
+    "descAlimentacio" : "Anar",
+    "descBazar": "Anar",
+    
+    "Button": "Afegir a la cesta",
+    "headerAlimentacio":"Alimentació",
+    "namePan": "Pa Casolà",
+    "nameArroz": "Arròs Blanc",
+    "nameChoco": "Xocolata",
+    "ButtonPan": "Afegir a la cesta",
+    "buttonChoco": "Afegir a la cesta",
+    "buttonArroz": "Afegir a la cesta",
+    "buttonLlet": "Afegir a la cesta",
+    "buttonOran": "Afegir a la cesta",
+    "buttonSan": "Afegir a la cesta",
+    "nameLlet": "Llet Asturiana",
+    "nameOran": "Lot de 5 Taronges",
+    "nameSan": "Síndria",
+
+
+    "buttonCalc": "Afegir a la cesta",
+    "buttonDes": "Afegir a la cesta",
+    "buttonLim": "Afegir a la cesta",
+    "buttonMaz": "Afegir a la cesta",
+    "buttonTaz": "Afegir a la cesta",
+    "buttonToa": "Afegir a la cesta",
+
+    "nameCalc": "Calculadora",
+    "nameDes": "Descaragolador elèctric",
+    "nameLim": "Neteja cristalls",
+    "nameMaz": "Lot de 4 testos",
+    "nameTaz": "Tassa tèrmica",
+    "nameToa": "Lot de 6 tovalloles",
+    
+    "inici": "Inici",
+    "sobreNosotros": "Sobre Nosaltres",
+    "compraOnline": "Compra online",
+
+    "client": "Client",
+    "company": "Empresa",
+    "follow": "Segueix-nos a",
+    "contact": "Contacte",
+    "compraonline": "Compra online",
+    "FAQS": "Preguntes Frequents",
+    "supermercats": "Supermercats",
+    "trabaja": "Treballa amb nosaltres",
+    "franquicia": "Obre la teva franquicia"
+
 }
+
+

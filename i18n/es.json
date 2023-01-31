@@ -27,5 +27,54 @@
     },
     "btn": "Registrarme",
 
-    "rip":"DEP ALEX :("
+    "rip":"DEP ALEX :(",
+
+    "titleAlimentacio": "Alimentación",
+"titleBazar": "Bazar",
+"descAlimentacio" : "Ir",
+"descBazar": "Ir",
+
+"Button": "Añadir a la cesta",
+"headerAlimentacio":"Alimentación",
+"namePan": "Pan Casero",
+"nameArroz": "Arroz Blanco",
+"nameChoco": "Chocolate",
+"ButtonPan": "Añadir a la cesta",
+"buttonChoco": "Añadir a la cesta",
+"buttonArroz": "Añadir a la cesta",
+"buttonLlet": "Añadir a la cesta",
+"buttonOran": "Añadir a la cesta",
+"buttonSan": "Añadir a la cesta",
+"nameLlet": "Leche Asturiana",
+"nameOran": "Lote de 5 Naranjas",
+"nameSan": "Sandía",
+
+"buttonCalc": "Añadir a la cesta",
+"buttonDes": "Añadir a la cesta",
+"buttonLim": "Añadir a la cesta",
+"buttonMaz": "Añadir a la cesta",
+"buttonTaz": "Añadir a la cesta",
+"buttonToa": "Añadir a la cesta",
+
+"nameCalc": "Calculadora",
+"nameDes": "Desatornillador Eléctrico",
+"nameLim": "Limpiacristales",
+"nameMaz": "Pack de 4 Macetas",
+"nameTaz": "Taza térmica",
+"nameToa": "Pack de 6 toallas",
+
+    "inici": "Inicio",
+    "sobreNosotros": "Sobre Nosotros",
+    "compraOnline": "Compra online",
+
+    "client": "Cliente",
+    "company": "Empresa",
+    "follow": "Siguenos en",
+    "contact": "Contacto",
+    "compraonline": "Compra online",
+    "FAQS": "Preguntas Frecuentes",
+    "supermercats": "Supermercados",
+    "trabaja": "Trabaja con nosotros",
+    "franquicia": "Abre tu franquicia"
+
 }

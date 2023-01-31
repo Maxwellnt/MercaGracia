@@ -1,52 +1,116 @@
 <!DOCTYPE html>
-<html lang="cat">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/css/main.css">
+    <title>Inici | MERCAGRACIA</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/uno.css">    
+    <link rel="icon" type="image/x-icon" href="/img/cestaIcon.png">
     <script src="/js/index.js" defer></script>
-    <title>Inici|MERCAGRACIA</title>
+
 </head>
 <body>
     <header>
-        <img src="/img/Mercadona-Logo.png" id="logo" alt="Logo">
-        
+        <img src="../img/Logo-MercaGracia.webp" alt="Logo" id="Logo">
         <nav>
-            <ul id="navegacion">
-                <li><a href="./index.html" id="linkInici">Inici</a></li>
-                <li><a href="about.html" id="linkAbout">Sobre Nosaltres</a></li>
-                <li><a href="compra.html" id="linkCompra">Compra Online</a></li>
-                <li><a href="./login.html" id="linkLogin">Login</a></li>
+            <ul id = "navegacion">
+                <li class = "nav_element"><a class = "nav_link" href="index.html" id="Inici">Inici</a></li>
+                <li class = "nav_element"><a class = "nav_link" href="" id="sobreNosotros">Sobre Nosaltres</a></li>
+                <li class = "nav_element"><a class = "nav_link" href="compra.html" id="compraOnline">Compra online</a></li>
+                <li class = "nav_element"><a class = "nav_link" href="login.html"><img src="../img/usuari.webp" alt="usuari" class="user"></a></li>
+                <li class = "nav_element"><button onclick="changeLanguage('ca')"><img src="../img/catalonia.webp" alt="cat" class="user"></button></li>
+                <li class = "nav_element"><button onclick="changeLanguage('es')"><img src="../img/espana.webp" alt="cat" class="user"></button></li>
+                <li class = "nav_element"><button onclick="changeLanguage('en')"><img src="../img/united.webp" alt="cat" class="user"></button></li>
+                
             </ul>
         </nav>
-        
-        <button onclick="changeLanguage('ca')">Catala</button>
-        <button onclick="changeLanguage('en')">English</button>
-        <button onclick="changeLanguage('es')">Español</button>
-
     </header>
+    
     <main>
-        <div>
-            <img src="/img/Mercadona-supermercado-040920.jpg" alt="super">
+        <section class="primera_seccio">
+            <div class="box"></div>
+            <div class = "box">
+                <p>A Gràcia<br>La millor qualitat i els millors productes</p>
+            </div>
+        </section>
+        <section id="segunda_seccion">
+        
+            <div class="containerA">
+                <img src="../img/trabajadores.webp" id="foto_trabajadores" alt="trabajadores">
+            </div>
+            <div class="containerA">
+                <div id="textA">
+                    <h2>Compromís i excel·lència</h2>
+                    <p>Entenem la importància d'oferir productes d'alta qualitat als nostres clients. Per això, treballem intensament per seleccionar només els millors productes frescos, ecològics i locals, així com productes de marca coneguda a preus justs. </p>
+                </div>
+            </div>
+            <div class="containerB">
+                <div id="textB">
+                    <h2>Experiència innovadora</h2>
+                    <p>La nostra principal prioritat és la satisfacció del client en els nostres supermercats. Per això, oferim serveis de caixer automàtic per a compres ràpides i servei de lliurament a domicili. També disposem d'una botiga en línia perquè pugui fer les seves compres des de qualsevol lloc en qualsevol moment.</p>
+                </div>
+            </div>
+            
+            <div class="containerB">
+                <img src="../img/trabajadora.jpg" alt="FotoTrabajadora" id="foto_trabajadora">
+            </div>
+
+            
+                
+        </section>
+    </main>
+
+    <footer>
+        <div id="mainFooter">
+            <div class="footer_container">
+                <h2 id="client">Client</h2>
+                <ul>
+                    <li class="list_footer_element"><a class="info_element" href="/html/compra.html" id="compraonline">Compra Online</a></li>
+                    <li class="list_footer_element"><a class="info_element" href="" id="FAQS">Preguntes Freqüents</a></li>
+                    <li class="list_footer_element"><a class="info_element" href="" id="supermercats">Supermercats</a></li>
+                </ul>
+            </div>
+            <div class="footer_container">
+                <h2 id="company">Empresa</h2>
+                <ul>
+                    <li class="list_footer_element"><a class="info_element" href="" id="trabaja">Treballa amb nosaltres</a></li>
+                    <li class="list_footer_element"><a  class="info_element" href="" id="franquicia">Obre la teva franquicia</a></li>
+                </ul>
+                
+            </div>
+            <div class="footer_container">
+                <h2 id="contact">Contacte</h2>
+                
+                <ul>
+                    <li class="list_footer_element"><p>Carrer de Martí 20</p>
+                        <p>08024 Barcelona (Espanya)</p></li>
+                    <li class="list_footer_element"><a class="info_element" href="tel:934 59 06 75"><img src="../img/telefono.webp" alt="telefono" class="contact_icons">934 59 06 75</a></li>
+                    <li class="list_footer_element"><a class="info_element" href = "mailto: info.client@mercagracia.com"><img src="../img/mail.webp" alt="mail" class="contact_icons"> info.client@mercagracia.com</a></li>
+                </ul>
+            </div>
+            <div class="footer_container">
+                <h2 id="follow">Segueix-nos a</h2>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/logosRedes/instagram.webp" alt="Instagram" class="logosRedes"></a>
+                    <a href="https://es-es.facebook.com/" target="_blank"><img src="../img/logosRedes/facebook.webp" alt="Facebook" class="logosRedes"></a>
+                    <a href="https://es.linkedin.com/" target="_blank"><img src="../img/logosRedes/linkedin.webp" alt="Linkedin" class="logosRedes"></a>
+                    <a href="https://es.linkedin.com/" target="_blank"><img src="../img/logosRedes/twitter.webp" alt="Twitter" class="logosRedes"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../img/logosRedes/youtube.webp" alt="Youtube" class="logosRedes"></a>
+            </div>
+        </div>
+        <div id="final">
+            <p>© MERCAGRACIA Tots els drets reservats.</p>
+            <ul>
+                <li class="final_element">Accessibilitat</li>
+                <li class="final_element">Política de cookies</li>
+                <li class="final_element">Termes i Condicions</li>
+                <li class="final_element">Política de privacitat</li>
+            </ul>
             
         </div>
-    </main>
-    <footer>
-        <ul>
-            <li>Cliente</li>
-            <li>Supermercados</li>
-            <li>Trabaja con nosotros</li>
-        </ul>
-        <ul>
-            <li>Contacto</li>
-            <li>Atención al cliente</li>
-
-        </ul>
     </footer>
+
 </body>
 </html>
+
