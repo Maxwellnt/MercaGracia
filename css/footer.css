@@ -76,6 +76,7 @@ footer{
 #final{
     display:flex;
     justify-content: space-around;
+    background-color: rgb(0,66,151) ;
     color:rgb(141, 141, 181);
     font-size: 0.80rem;
     padding-top: 3.5em;
