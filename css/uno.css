@@ -81,7 +81,7 @@ a{
 
 #segunda_seccion{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50vw 50vw;
     grid-template-rows: auto;
 }
 
@@ -104,8 +104,8 @@ a{
 }
 
 #foto_trabajadores{
-    width: auto;
-    height: 22rem;
+    width: 50vw;
+    height: auto;
     padding:1.5rem;
     margin:3rem;
 }
@@ -116,15 +116,21 @@ a{
     width: 80%;
 }
 
-#textA h2{
+.textA h2{
     padding: 1rem;
-    font-size: 2.5rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 3rem;
+    text-align: center;
+    text-overflow: ellipsis;
 }
 
-#textA p{
+.textA p{
     padding: 1rem;
     padding-top: 0;
-    padding-left: 1rem;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: center;
     width: auto;
     font-size: 1.1rem;
 }
@@ -137,7 +143,7 @@ a{
 
 #textB h2{
     padding: 1rem;
-    font-size: 2.5rem;;
+    font-size: 7vw;;
     
 }
 
@@ -152,11 +158,12 @@ a{
 }
 
 #foto_trabajadora{
-    width: auto;
-    height: 22rem;
-    padding:1.5rem;
-    margin:3rem;
-    border-radius: 1rem;
+    width: 50vw;
+    height:auto;
+    
+    margin: 3rem;
+    margin-right: 0 rem;
+    
 }
 
 footer{
@@ -239,7 +246,7 @@ footer{
     color:aliceblue;
 }
 
-@media (max-width:1320px){
+@media (max-width:1220px){
     .primera_seccio{
         background-image: url('../img/fotoinicio.png');
         background-repeat: no-repeat;
